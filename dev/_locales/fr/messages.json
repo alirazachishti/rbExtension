@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Enregistreur de réunion Fireflies.ai, transcription, recherche",
+    "description":"Enregistreur de réunion Fireflies.ai, transcription, recherche"
+
+  },
+  "appDesc": {
+    "message": "Enregistrez et transcrivez des réunions et des appels directement depuis le navigateur", 
+    "description":"Enregistrez et transcrivez des réunions et des appels directement depuis le navigateur"
+  }
+}

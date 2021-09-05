@@ -1,0 +1,51 @@
+{
+  "version": "1.7.1",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "__MSG_appName__",
+    "default_popup": "popup.html",
+    "default_icon": "img/icon-48.png"
+  },
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+  "web_accessible_resources": [
+    "img",
+    "images/*",
+    "fonts/*",
+    "icons",
+    "icon-128.png",
+    "icon-48.png",
+    "img/icon-128.png",
+    "img/icon-48.png",
+    "mediaAccess.html"
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "tabCapture",
+    "notifications",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.zoom.us/*",
+    "*://*.zoomgov.com/*"
+  ],
+  "oauth2": {
+    "client_id": "964235282027-liib5ar4gi98crc4u3eomaa4cl0et8lg.apps.googleusercontent.com",
+    "scopes": ["openid", "email", "profile", "https://www.googleapis.com/auth/calendar.readonly"]
+  },
+  "externally_connectable": {
+    "matches": ["https://app.fireflies.ai/*"]
+  },
+  "content_security_policy": "font-src 'self' https://fonts.gstatic.com/ 'unsafe-inline'; default-src 'self'; script-src 'self'; connect-src http://logs-01.loggly.com https://o207331.ingest.sentry.io https://www.googleapis.com https://app.fireflies.ai wss://media-storage.firefliesapp.com https://media-storage.firefliesapp.com; style-src * 'unsafe-inline' 'self' https://fonts.googleapis.com; img-src 'self' data:;"
+}

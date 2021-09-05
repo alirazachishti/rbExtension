@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Fireflies.ai grabación de debates, transcribir, buscar",
+    "description": "Fireflies.ai grabación de debates, transcribir, buscar"
+  },
+  "appDesc": {
+    "message": "Grabe y transcriba reuniones y llamadas directamente desde el navegador", 
+    "description":"Grabe y transcriba reuniones y llamadas directamente desde el navegador"
+  }
+}

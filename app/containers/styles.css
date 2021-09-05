@@ -1,0 +1,58 @@
+.mainPage {
+  background-color: white;
+}
+.headerTag {
+  color: #3c1fc9;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 70px;
+  text-transform: lowercase;
+}
+header {
+  text-align: center;
+}
+.heading {
+  max-width: 300px;
+  display: flex;
+}
+.headingImage {
+  width: 110px;
+}
+.mainPanel {
+  display: flex;
+}
+.headingText {
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #454545;
+}
+
+
+/* FOR SINGLE ANNOUNCEMENTS */
+
+.announcementBox {
+  display: block;
+  background: #4274FF;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 700px;
+  border: 1px solid #4274FF;
+}
+.announcementType {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.announcementName {
+  font-weight: bold;
+  font-size: 20px;
+}
+.announcementDate {
+  text-align: right;
+}

@@ -1,0 +1,791 @@
+.popup_mainContainer *,
+.topbar_container * {
+  font-family: PoppinsRegular !important;
+}
+.popup_mainContainer img,
+.topbar_container img {
+  font-family: PoppinsBold !important;
+}
+.rightArrow {
+  display: inline-flex;
+}
+.topbar_container {
+  display: flex;
+  max-width: 80px;
+  align-items: center;
+  z-index: 99999;
+  position: relative;
+  pointer-events: initial;
+  margin-right: 8px;
+}
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.topbar_div {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  z-index: 100000000;
+  padding: 20px 20px;
+  box-shadow: 0px 5px 20px rgba(30, 30, 34, 0.059);
+  box-sizing: border-box;
+}
+.topbar_div_loader {
+  position: absolute;
+  box-shadow: none;
+  background: white;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000000;
+  box-sizing: border-box;
+}
+.topbar_logo_div {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.opbar_div .topbar_logo_div {
+  margin-bottom: 18px;
+}
+.topbar_cntrl_btnDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.disable_pointer {
+  pointer-events: none;
+  opacity: 0.8;
+}
+.topBarControl_btn {
+  margin-bottom: 8px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f6008d;
+  color: #f6008d;
+  font-size: 14px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  min-width: auto;
+  min-height: auto;
+}
+.topbar_cntrl_btnDiv .btnCanvas:last-child .topBarControl_btn {
+  margin-bottom: 0;
+}
+.topBarControl_btn.disabled-btn {
+  border-color: #777777;
+}
+.topBarControl_btn:hover {
+  background-color: #f6008d;
+  color: #ffffff;
+  outline: 0;
+}
+.topBarControl_btn.disabled-btn:hover {
+  background-color: white !important;
+}
+.topBarControl_btn img {
+  width: 22px;
+  height: auto;
+}
+/* CSS for popups start */
+.popUp_div {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 20px rgba(30, 30, 34, 0.07);
+  padding: 24px;
+  box-sizing: border-box;
+}
+.mainComponent {
+  width: 100%;
+}
+.meetingLabel {
+  font-size: 14px;
+  color: rgb(59 115 255);
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+.popUpTopHdDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.popUp_topHd {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+}
+.popUp_topSetIconDiv > i {
+  font-size: 20px;
+  color: #0f0f0f;
+}
+.popUp_inptFrmGrp {
+  margin-bottom: 15px;
+}
+.popUp_inputFrmCntrl {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 48px !important;
+  font-size: 16px !important;
+  background-color: #fff !important;
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+  color: #222 !important;
+  border: 1px solid #e4e4ea !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 8px 16px !important;
+  margin: 0 !important;
+  outline: none !important;
+}
+.popUp_inputFrmCntrl:focus {
+  border: 1px solid #e4e4ea !important;
+  box-shadow: none !important;
+}
+.popUp_inputFrmCntrl::-webkit-input-placeholder {
+  color: rgba(30, 30, 34, 0.4);
+  font-size: 16px;
+  font-weight: normal;
+}
+.popUp_inputFrmCntrl:-ms-input-placeholder {
+  color: rgba(30, 30, 34, 0.4);
+  font-size: 16px;
+  font-weight: normal;
+}
+.popUp_inputFrmCntrl::placeholder {
+  color: rgba(30, 30, 34, 0.4);
+  font-size: 16px;
+  font-weight: normal;
+}
+.popUp_inputFrmCntrl:focus {
+  font-size: 16px;
+  color: #222;
+  outline: none;
+  border: 1px solid #3b73ff;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.popUp_mltInptContainer {
+  width: 100%;
+  min-height: 48px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #f5f5f5;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.popUp_mltInptContainer::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.popUp_miniInputFrmCntrl {
+  background-color: #e1e1e1;
+  width: auto;
+  min-width: 152px;
+  min-height: 38px;
+  border: 1px solid #e1e1e1;
+  margin-right: 8px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.popUp_inptFrmGrpLast {
+  margin-bottom: 0px;
+}
+.popUp_inptFrmGrpLast > div {
+  border: 1px solid rgb(228 228 234);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 3px 8px;
+  min-height: 48px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.popUp_inptFrmGrpLast > div::-webkit-scrollbar {
+  width: 2px;
+  height: 6px;
+}
+.popUp_inptFrmGrpLast > div::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.popUp_inptFrmGrpLast > div > div {
+  margin: 0px 8px 0px 0px;
+  min-height: 36px;
+  background-color: rgb(59 115 255 / 30%);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgb(30 30 34);
+}
+.popUp_inptFrmGrpLast > div > div div:first-child {
+  padding-left: 0;
+}
+.popUp_inptFrmGrpLast > div > div div:last-child {
+  height: 14px;
+  width: 14px;
+  margin: 0 6px 0px 3px;
+  background: transparent;
+}
+.popUp_inptFrmGrpLast > div > div div:last-child:before,
+.popUp_inptFrmGrpLast > div > div div:last-child:after {
+  background-color: #1e1e22;
+}
+.popUp_inptFrmGrpLast > div > input {
+  font-size: 16px;
+  max-width: 100%;
+  min-height: 38px;
+}
+.popUp_inptFrmGrpLast > div > input:focus {
+  font-size: 16px;
+  color: #222;
+  outline: none;
+}
+.popUp_inptFrmGrpLast > div > input::-webkit-input-placeholder {
+  color: rgba(30, 30, 34, 0.4);
+  font-size: 16px;
+  font-weight: normal;
+}
+.popUp_inptFrmGrpLast > div > input:-ms-input-placeholder {
+  color: rgba(30, 30, 34, 0.4);
+  font-size: 16px;
+  font-weight: normal;
+}
+.popUp_inptFrmGrpLast > div > input::placeholder {
+  color: rgba(30, 30, 34, 0.4);
+  font-size: 16px;
+  font-weight: normal;
+}
+.popUp_btmBtnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px -4px 0px -4px;
+}
+.popUp_btmBtnDiv .btnCanvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.popUp_btmBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+
+  min-width: auto;
+}
+.popUp_btnPink {
+  background-color: #f6008d;
+  border: 1px solid #f6008d;
+}
+.popUp_btmBtn:focus {
+  outline: none;
+}
+.popUp_paraDiv {
+  margin-top: 20px;
+}
+.popUp_topPara {
+  font-size: 14px;
+  color: #1e1e22;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.popUpCrossBtnDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.popUpLogo {
+  display: inline-flex;
+}
+.popUpCrossBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #c2c2c2;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0px;
+}
+.popUpCrossBtn:hover > i::before {
+  color: #f6008d;
+}
+.popUpCrossBtn:focus {
+  outline: none;
+}
+.detailComponent {
+  border-radius: 10px;
+}
+.settingComponent .popUp_btmBtnDiv,
+.detailComponent .popUp_btmBtnDiv {
+  justify-content: flex-end;
+}
+.detailComponent .popUp_btmBtnDivHalf {
+  justify-content: center;
+}
+.mainRecordComponent .popUp_btmBtnDiv .btnCanvas,
+.detailComponent .popUp_btmBtnDiv .btnCanvas {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.detailComponent .popUp_btmBtnDivHalf .btnCanvas {
+  flex: 0;
+  margin: 0px 10px;
+}
+.mainRecordComponent .popUp_btmBtnDiv .btnCanvas .popUp_btmBtn,
+.detailComponent .popUp_btmBtnDiv .btnCanvas .popUp_btmBtn {
+  width: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.popUpTopIconDiv {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popUpTopIconDiv .btnCanvas {
+  display: inline-flex;
+}
+.popUp_topSetIconBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+.popUp_topSetIconBtn:focus {
+  outline: none;
+}
+.popUp_btnBlue {
+  background-color: #2b78e4;
+  border: 1px solid #2b78e4;
+}
+.popUp_btnBlue:hover {
+  background-color: #0044a4;
+  border-color: #0044a4;
+}
+.popUpBtn_topPrevIconBtn {
+  font-size: 16px;
+}
+.popUpBtn_topPrevIconBtn {
+  font-size: 16px;
+}
+.popUpBtn_topSettingTxtDiv {
+  margin-left: 8px;
+  display: inline-flex;
+}
+.popUpTopPrevIconDiv .btnCanvas {
+  display: inline-flex;
+}
+.popUpTopPrevIconDiv .popUpBtn_topSettingTxt {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #1e1e22;
+  margin-left: 12px;
+  margin-bottom: 0;
+}
+.popUp_btnRed {
+  background-color: #f60043;
+  border: 1px solid #f60043;
+}
+.popUp_btnRed:hover {
+  background-color: #c41847;
+}
+.popUpTopPrevIconDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.popUp_settingBtnsGrpDiv {
+  position: relative;
+  margin-bottom: 8px;
+}
+.popUp_settingsBtn {
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 1px solid #3b73ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #0f0f0f;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+.popUp_settingsBtn:focus {
+  outline: none;
+}
+.popUp_btnPink {
+  background-color: #f6008d;
+  border: 1px solid #f6008d;
+}
+.popUp_btnPink:hover {
+  background-color: #d5047c;
+  border-color: #d5047c;
+}
+.popUp_btnGrey {
+  background-color: #777;
+  border: 1px solid #777;
+}
+.popUp_btnGrey:hover {
+  background-color: #555;
+}
+.popUp_settingBtnsLastGrpDiv {
+  margin-bottom: 0px;
+}
+.popUp_settingBtnsGrpIconDiv {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 16px;
+  display: flex;
+  align-items: center;
+}
+.popUp_settingBtnsGrpIconDiv {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* CSS for popups end */
+
+.d-none {
+  display: none !important;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+}
+.dot-top-right {
+  position: absolute;
+  right: 16px;
+  top: 33%;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.dot--basic {
+  animation: blink 1s infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dot {
+    animation: none;
+  }
+}
+.logo_image {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+.popupDetails {
+  width: auto;
+  z-index: 99999;
+  pointer-events: initial;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.updatePopup {
+  width: 365px;
+}
+
+.signInGoogle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signInGoogle .googleBoxLogo {
+  display: inline-flex;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(59 115 255 / 10%);
+  border-radius: 5px;
+  border: none;
+  padding: 8px 15px;
+  min-height: 48px;
+  font-size: 16px;
+  color: rgb(30 30 34);
+  font-weight: normal;
+  cursor: pointer;
+}
+.googleBtn .googleImgCanvas {
+  display: inline-flex;
+  margin-right: 16px;
+}
+.googleBtn:hover,
+.googleBtn:focus {
+  background-color: rgb(59 115 255 / 24%);
+  font-size: 16px;
+  color: rgb(30 30 34);
+  border: none;
+  box-shadow: none;
+}
+.width100 {
+  height: 50px;
+}
+.width100 h3 {
+  text-align: center;
+}
+.width100 .btnCanvas {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.popUpBtn_topEmail {
+  width: 100%;
+  display: block;
+  color: rgb(39 85 255);
+  text-align: right;
+  margin-left: 20px;
+  text-align: right;
+  word-break: break-word;
+  font-size: 12px;
+}
+.warningIcon img {
+  vertical-align: top;
+}
+.detailComponent .popUp_btmBtnDiv .popUp_bgBtn {
+  max-width: 95%;
+}
+.detailComponent .popUp_btmBtnDiv .popUp_singleBtn {
+  flex: unset;
+}
+.detailComponent .popUp_btmBtnDiv .popUp_smBtn {
+  max-width: 25%;
+}
+.topbar_controls {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  flex-grow: 1;
+}
+.topbar_cross_icon {
+  flex-shrink: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgb(140, 140, 140);
+}
+.topbar_cross_icon img {
+  width: 14px;
+  height: 14px;
+}
+.app_timer {
+  font-size: 12px;
+  color: #f6008d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.popupLoader {
+  height: 14px;
+  width: 100%;
+  background: rgb(255 255 255);
+  border: 1px solid #f6008d;
+  border-radius: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+.popupFilledLoader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #f6008d;
+  border-radius: 20px;
+  height: 12.5px;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+.disabled-btn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.popUp_btnDisable {
+  flex-direction: column;
+}
+.popUp_btnDisable .disableBtnText {
+  color: #f6008d;
+  font-size: 14px;
+  text-align: center;
+}
+.appMainContainer {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.popup_mainContainer .popup_bottomInfo {
+  background: rgb(255 255 255);
+  text-align: center;
+  margin: 15px 20px -5px;
+}
+.popup_mainContainer .popup_bottomInfo .popup_bottomInfo_text {
+  opacity: 0.3;
+  line-height: 1;
+  font-size: 12px;
+  font-style: italic;
+  color: rgb(0 0 0);
+}
+.topBarControlSmall_btn img {
+  width: 18px;
+}
+.topBarMeetDot .dot--basic {
+  top: 29%;
+}
+.topBarControlLarge_btn img {
+  width: 26px;
+}
+
+.zoomBtn-canvas {
+  margin-top: 15px;
+}
+.zoomBtn-canvas .zoomLabel {
+  font-size: 16px;
+}
+.termsConditions {
+  font-size: 10px;
+  line-height: 1.2;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(136 136 136);
+}
+.termsConditions a {
+  color: rgb(39 85 255);
+}
+
+.finish__btn-canvas {
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.finish__btn {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6e75ff;
+  min-width: 160px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.finish__btn:hover,
+.finish__btn:focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0069d9;
+}
+
+.versionNumber {
+  padding: 0 10px 5px;
+  text-align: right;
+  background: white;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  font-style: oblique;
+  font-size: 11px;
+}

@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Fireflies Meeting Recorder Transcribe, Search",
+    "description": "Fireflies Meeting Recorder Transcribe, Search"
+  },
+  "appDesc": {
+    "message": "Record & Transcribe meetings & calls directly from the browser", 
+    "description":"Record & Transcribe meetings & calls directly from the browser"
+  }
+}
